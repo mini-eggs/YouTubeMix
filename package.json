@@ -1,0 +1,24 @@
+{
+  "name": "youtubemix",
+  "version": "1.0.0",
+  "description": "A Preact site.",
+  "main": "src/index.html",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "start": "serve dist",
+    "build":
+      "parcel build src/index.html --public-url=/ && mv dist/youtubemix.html dist/index.html"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "preact": "^8.2.7",
+    "render-prop-composer": "^1.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "parcel-bundler": "^1.6.2",
+    "serve": "^6.5.1"
+  },
+  "author": "Evan M Jones <evanjones4040@gmail.com> (https://evanjon.es/)",
+  "license": "MIT"
+}

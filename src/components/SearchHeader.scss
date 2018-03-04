@@ -1,0 +1,49 @@
+.SearchHeader {
+  padding: 10px 30px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    margin: 0 100px 0 0;
+    font-size: 24px;
+  }
+
+  > div {
+    flex: 0.5;
+  }
+
+  input {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 5px 15px;
+    transition-duration: 150ms;
+    min-width: 0;
+    width: 300px;
+    max-width: 100%;
+    opacity: 0.75;
+    cursor: pointer;
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:focus {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+.SearchHeader-container {
+  .spacer {
+    height: 53px;
+  }
+}

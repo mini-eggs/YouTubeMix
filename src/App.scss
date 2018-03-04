@@ -1,0 +1,93 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #f3f3f3;
+  min-height: 100vh;
+  line-height: 1.4;
+}
+
+* {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  max-width: 100%;
+  animation-fill-mode: forwards;
+}
+
+h1 {
+  font-family: "Neuton", serif;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+button,
+input {
+  border: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  outline: none !important;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: transparent;
+  transition-duration: 250ms;
+}
+
+button {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+}
+
+button:focus,
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 0 solid transparent;
+  border-left-width: 10px;
+  background-clip: padding-box;
+  background-color: rgba(0, 0, 0, 0);
+  transition-duration: 250ms;
+}
+
+.Pillar:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    > * {
+      display: none !important;
+    }
+
+    &:after {
+      text-align: center;
+      content: "WORK IN PROGRESS. MOBILE SITE COMING SOON.";
+      font-weight: bold;
+      display: block !important;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

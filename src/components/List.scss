@@ -1,0 +1,36 @@
+.List {
+  width: 100%;
+  margin: 0 auto;
+
+  > button {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    animation-name: FadeIn;
+    animation-duration: 250ms;
+    width: 100%;
+
+    > .Image-container {
+      padding: 0;
+      position: relative;
+      width: 100%;
+      padding-top: calc(100% * 9 / 16);
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    > div {
+      padding: 15px;
+      text-align: left;
+    }
+  }
+}

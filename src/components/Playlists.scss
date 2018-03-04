@@ -1,0 +1,14 @@
+.Playlists {
+  > div {
+    > button {
+      background-color: white;
+      padding: 5px 15px;
+      width: 100%;
+      margin-bottom: 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+  }
+}
